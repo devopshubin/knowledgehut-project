@@ -1,0 +1,9 @@
+version: "3.8"
+services: 
+  noter: 
+    build:
+      context: ./noter
+    ports:
+      - "5000:5000"
+    restart: always
+    container_name: noterapp
