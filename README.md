@@ -304,7 +304,7 @@ Your application is now deployed and running in the AWS Cloud!
 # Step 7: Test your application
 For testing your application go to the browser and paste the endpoint `https://fknc0wfxe3.execute-api.us-east-1.amazonaws.com/Prod/hello/`.  
 You will get the result like this:  
-![hello-world!](./hello-world.png)
+![hello-world!](./screeshot-helloword/hello-world.png)
 
 # Step 8: Delete your application from the AWS Cloud
 In this step, you use the AWS SAM CLI sam delete command to delete your application from the AWS Cloud.  
