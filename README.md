@@ -304,4 +304,26 @@ Your application is now deployed and running in the AWS Cloud!
 # Step 7: Test your application
 For testing your application go to the browser and paste the endpoint `https://fknc0wfxe3.execute-api.us-east-1.amazonaws.com/Prod/hello/`.  
 You will get the result like this:  
-![hello-world](D:\SAMCLI\hello-world.png)
+![hello-world!](./hello-world.png)
+
+# Step 8: Delete your application from the AWS Cloud
+In this step, you use the AWS SAM CLI sam delete command to delete your application from the AWS Cloud.  
+
+**To delete your application from the AWS Cloud**  
+1. In your command line, from the sam-app project directory, run the following:
+```
+$ sam delete
+```
+2. The AWS SAM CLI will ask you to confirm. Then, it will delete your application’s Amazon S3 bucket and AWS CloudFormation stack. The following is an example output:  
+```
+$ sam delete
+        Are you sure you want to delete the stack sam-app in the region us-east-1 ? [y/N]: y
+        Are you sure you want to delete the folder sam-app in S3 which contains the artifacts? [y/N]: y
+        - Deleting S3 object with key sam-app/f91445947c37eba1be7ec6d06a3b358c
+        - Deleting S3 object with key sam-app/52877c74437347a1fec8beda5d323faa.template
+        - Deleting Cloudformation stack sam-app
+
+Deleted successfully
+PS D:\SAMCLI\sam-app>
+
+```
