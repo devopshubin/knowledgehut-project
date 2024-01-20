@@ -7,7 +7,7 @@
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "Amit Singh",
+    "author": "Saurav Singh",
     "license": "ISC",
     "description": "Simple calculator app",
     "dependencies": {
