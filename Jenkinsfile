@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'sonar-node', url: 'https://github.com/iamsauravsingh7/knowledgehut-project.git'
+                git branch: 'sonar-node', url: 'https://github.com/devopshubin/knowledgehut-project.git'
             }
         }
         stage('build code') {
